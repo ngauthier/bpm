@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# Usage: bpm update [package name]
+# Summary: Update one or all bpm packages
 set -e
 
 name=$1

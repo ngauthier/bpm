@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# Usage: bpm install <git url> <name>
+# Summary: Install a package
 set -e
 
 git=$1
@@ -9,7 +11,6 @@ echo installing $name from $git
 
 mkdir -p $HOME/.bpm/packages
 mkdir -p $HOME/.bpm/bin
-
 
 rm -rf $pkg
 git clone $git $pkg
