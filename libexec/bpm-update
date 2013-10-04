@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+set -e
+
+name=$1
+
+function update {
+  name=$1
+  pkg=$HOME/.bpm/packages/$name
+
+  echo Updating $name
+  cd $pkg
+  git pull
+}
+
+if [ $name ]
+then
+  update $name
+else
+  for pkg in $HOME/.bpm/packages/*
+  do
+    name=`basename $pkg`
+    update $name
+  done
+fi

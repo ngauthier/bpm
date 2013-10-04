@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -e
+
+git=$1
+name=$2
+pkg=$HOME/.bpm/packages/$name
+
+echo installing $name from $git
+
+mkdir -p $HOME/.bpm/packages
+mkdir -p $HOME/.bpm/bin
+
+
+rm -rf $pkg
+git clone $git $pkg
+
+for b in $pkg/bin/*
+do
+  ln -s $b $HOME/.bpm/bin/
+  echo link $b
+done
