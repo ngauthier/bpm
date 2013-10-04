@@ -4,8 +4,8 @@ Bash Package Manager
 
 ## Install
 
-git clone git@github.com:ngauthier/bpm
-./bpm/bin/bpm git@github.com:ngauthier/bpm bpm
+  git clone git@github.com:ngauthier/bpm
+  ./bpm/bin/bpm git@github.com:ngauthier/bpm bpm
 
 Then put `$HOME/.bpm/bin` on your path.
 
