@@ -6,7 +6,6 @@ Bash Package Manager
 
     git clone git@github.com:ngauthier/bpm
     ./bpm/bin/bpm git@github.com:ngauthier/bpm bpm
+    rm -rf bpm
 
-Then put `$HOME/.bpm/bin` on your path.
-
-Now you can remove where you cloned bpm in the first place.
+Then put `$HOME/.bpm/bin` on your path. Now you can run bpm!
